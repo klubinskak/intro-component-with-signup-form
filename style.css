@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    display: flex;
+}
+.form-card{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.text-card{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 70px;
+}
+h1{
+    font-size: 2.5rem;
+    width: 400px;
+    letter-spacing: 0.20rem;
+    margin-bottom: 15px;
+}
+p{
+    font-size: 12px;
+    width: 400px;
+}
+.input-form{
+    display: flex;
+    flex-direction: column;
+}
+.input-form input{
+    padding: 10px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+.try-it-btn{
+    background-color: hsl(248, 32%, 49%);
+    border:none;
+    color: white;
+    width: 470px;
+    padding: 15px;
+    margin: 20px 0 20px 0;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.submit-btn{
+    background-color: hsl(154, 59%, 51%);
+    border:none;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+span{
+    color:hsl(0, 100%, 74%);
+}
+.input-form{
+    position: relative;
+}
+.alert-circle-outline{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: hsl(0, 100%, 74%);
+}
+.input-form.error input {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+.input-form.error .alert-circle-outline{
+    visibility: visible;
+}
+.input-form .alert-circle-outline{
+    visibility: hidden;
+}
+
+.input-form small{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+    visibility: hidden;
+
+}
+.input-form.error small{
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .container{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    .card{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h1{
+        margin-top: 50px;
+        font-size: 25px;
+        position: relative;
+        left: 32px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+    }
+    #content-p{
+        padding: 0 80px 0 80px;
+        position: relative;
+        left: 35px;
+    }
+    .try-it-btn{
+        width: 300px;
+        padding: 20px 50px 20px 50px;
+        line-height: 1.5;
+    }
+    .form-card{
+        width: 300px;
+        margin: 5px 50px 50px 50px;
+    }
+    #terms{
+        width: 240px;
+    }
+    .input-form input{
+        margin: 5px;
+    }
+}
